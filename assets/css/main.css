@@ -61,7 +61,7 @@ mark {
 }
 
 input::-moz-focus-inner {
-	border: 0;
+	border: 1;
 	padding: 0;
 }
 
@@ -1476,24 +1476,36 @@ input, select, textarea {
 
 	table {
 		width: 100%;
+		border: 1px solid;
+		
+		
 	}
+	table, td, th {
+  		border: 1px solid;
+  		padding: 0.2em 0.2em 0.2em 0.2em
+	}	
+
 
 		table.default {
 			width: 100%;
+			border: 1px solid;
 		}
 
 			table.default tbody tr:nth-child(2n+2) {
 				background: #000000;
+				border: 1px solid;
 			}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+				border: 1px solid;
+				padding: 1em 1em 1em 1em;
 			}
 
 			table.default th {
 				text-align: left;
 				font-weight: 400;
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 1em 1em 1em 1em;
+				border: 1px solid;
 			}
 
 			table.default thead {
